@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 public class Stream {
 
@@ -17,13 +16,13 @@ public class Stream {
         String text = """
             """;
 
-        List<String> words = text.lines()
+        String[] words = text.lines()
             .filter(line -> !line.isEmpty())
             .map(line -> Arrays.stream(line.split("\\s+")).toList())
             .flatMap(Collection::stream)
             .distinct()
-            .toList();
+            .toArray(String[]::new);
 
-        System.out.println(words);
+        System.out.println(Arrays.toString(words));
     }
 }
