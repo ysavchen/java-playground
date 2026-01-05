@@ -1,8 +1,8 @@
 package org.example;
 
-public class Utils {
+public class StringExample {
 
     public static void main(String[] args) {
-        //Objects, Arrays, Math
+
     }
 }

@@ -2,7 +2,7 @@ package org.example;
 
 import java.io.*;
 
-public class IO {
+public class IOExample {
 
     /**
      * Потоковый ввод-вывод (java.io)<br/>
