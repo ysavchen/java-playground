@@ -29,22 +29,23 @@ public class CollectionExample {
      * Set не допускает хранение двух уникальных элементов.
      */
     public static void hashSet() {
-
+        Set<String> set = new HashSet<>();
     }
 
     /**
      * Упорядоченное множество (ordered set)<br/>
-     * Будете итерировать эелементы в том же порядке, в котором их добавляли в множество.
+     * Будете итерировать эелементы в том же порядке, в котором их добавляли в множество.<br/>
+     * ArrayList и LinkedList также являются упорядоченными коллекциями.
      */
     public static void linkedHashSet() {
-
+        Set<String> set = new LinkedHashSet<>();
     }
 
     /**
      * Отсортированное множество (sorted set) на основе красно-черного дерева
      */
     public static void treeSet() {
-
+        Set<String> set = new TreeSet<>();
     }
 
     /**
@@ -58,7 +59,8 @@ public class CollectionExample {
     }
 
     /**
-     * Очередь/стек
+     * Очередь / стек<br/>
+     * {@link Stack} использовать не нужно, так как считается устаревшим.
      */
     public static void arrayDeque() {
         Deque<String> queue = new ArrayDeque<>();
@@ -68,10 +70,10 @@ public class CollectionExample {
     }
 
     /**
-     * Приоритетная очередь
+     * Очередь с приоритетом (heap-based)
      */
     public static void priorityQueue() {
-        PriorityQueue<Integer> integerQueue = new PriorityQueue<>();
-        PriorityQueue<Integer> reversedQueue = new PriorityQueue<>(reverseOrder());
+        Queue<Integer> queue = new PriorityQueue<>();
+        Queue<Integer> reversedQueue = new PriorityQueue<>(reverseOrder());
     }
 }
