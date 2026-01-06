@@ -11,6 +11,13 @@ public class CollectionExample {
     }
 
     /**
+     * Статический массив
+     */
+    public static void array() {
+        String[] array = {"Anna", "Maria", "Elena"};
+    }
+
+    /**
      * Список на основе динамического массива
      */
     public static void arrayList() {
@@ -53,7 +60,7 @@ public class CollectionExample {
      */
     public static void hashMap() {
         Map<String, String> map = new HashMap<>();
-        map.put("1", "blabla");
+        map.put("1", "Anna");
         String result = map.get("1");
         System.out.println(result);
     }
