@@ -25,7 +25,7 @@ public class CollectionExample {
     }
 
     /**
-     * Неупорядоченное множество (unordered set) на основе hash-таблицы<br/>
+     * Множество (unordered set) на основе hash-таблицы<br/>
      * Set не допускает хранение двух уникальных элементов.
      */
     public static void hashSet() {
@@ -56,6 +56,20 @@ public class CollectionExample {
         map.put("1", "blabla");
         String result = map.get("1");
         System.out.println(result);
+    }
+
+    /**
+     * Упорядоченная hash-таблица
+     */
+    public static void linkedHashMap() {
+        Map<String, String> map = new LinkedHashMap<>();
+    }
+
+    /**
+     * Отсортированная hash-таблица
+     */
+    public static void treeMap() {
+        Map<String, String> map = new TreeMap<>();
     }
 
     /**
