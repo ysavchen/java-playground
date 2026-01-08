@@ -1,6 +1,7 @@
 package org.example;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class IOExample {
 
@@ -21,6 +22,9 @@ public class IOExample {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        // Scanner подходит для ввода и вывода малых объёмов данных, так как он медленный
+        Scanner scanner = new Scanner(System.in);
 
         /*
         Пример ввода и вывода числа n, где -10^9 < n < 10^9:
