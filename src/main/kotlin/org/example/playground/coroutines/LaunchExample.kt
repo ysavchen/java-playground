@@ -1,4 +1,4 @@
-package org.example.coroutines
+package org.example.playground.coroutines
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

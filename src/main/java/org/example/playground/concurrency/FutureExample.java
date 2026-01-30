@@ -1,4 +1,4 @@
-package org.example.concurrency;
+package org.example.playground.concurrency;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

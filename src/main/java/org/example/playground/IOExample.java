@@ -1,4 +1,4 @@
-package org.example;
+package org.example.playground;
 
 import java.io.*;
 import java.util.Scanner;
