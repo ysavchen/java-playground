@@ -4,6 +4,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
+/**
+ * Флаг для отладки корутин: -Dkotlinx.coroutines.debug
+ */
 fun main() {
     println("Before runBlocking")
     runBlocking {
