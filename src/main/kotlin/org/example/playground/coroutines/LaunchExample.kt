@@ -8,15 +8,15 @@ import kotlinx.coroutines.runBlocking
  * Флаг для отладки корутин: -Dkotlinx.coroutines.debug
  */
 fun main() {
-    println("Before runBlocking")
+    println("[${Thread.currentThread().name}] Before runBlocking")
     runBlocking {
-        println("Before launch")
+        println("[${Thread.currentThread().name}] Before launch")
         launch {
-            println("Hello, ")
+            println("[${Thread.currentThread().name}] Hello, ")
             delay(200L)
-            println("world!")
+            println("[${Thread.currentThread().name}] world!")
         }
-        println("After launch")
+        println("[${Thread.currentThread().name}] After launch")
     }
-    println("After runBlocking")
+    println("[${Thread.currentThread().name}] After runBlocking")
 }
