@@ -19,5 +19,10 @@ public class UtilsExample {
 
         String[] copy = array.clone();
         System.out.println(Arrays.toString(copy));
+
+        int[][] table = {{1, 2, 3}, {4, 5}, {6}};
+        int[][] tableCopy = table.clone();
+        System.out.println(Arrays.deepEquals(table, tableCopy));
+        System.out.println(Arrays.deepToString(tableCopy));
     }
 }
