@@ -22,8 +22,9 @@ public class CollectionExample {
      * Таблица / матрица
      */
     public static void table() {
-        int[][] table = {{1, 2, 3}, {4, 5}, {6}};
-        System.out.println(Arrays.deepToString(table));
+        int[][] table = new int[2][5];
+        int[][] initializedTable = {{1, 2, 3}, {4, 5}, {6}};
+        System.out.println(Arrays.deepToString(initializedTable));
     }
 
     /**
