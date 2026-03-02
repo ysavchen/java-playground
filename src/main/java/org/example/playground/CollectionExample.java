@@ -15,6 +15,15 @@ public class CollectionExample {
      */
     public static void array() {
         String[] array = {"Anna", "Maria", "Elena"};
+        System.out.println(Arrays.toString(array));
+    }
+
+    /**
+     * Таблица / матрица
+     */
+    public static void table() {
+        int[][] table = {{1, 2, 3}, {4, 5}, {6}};
+        System.out.println(Arrays.deepToString(table));
     }
 
     /**
