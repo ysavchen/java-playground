@@ -86,5 +86,22 @@ public class ControlFlowExample {
             case 2 -> "two";
             default -> "other";
         });
+
+        // *** yield in switch expression ***
+        // yield нужен для возврата результата выполнения блока
+        calculate("sign", 2.0);
+    }
+
+    public static double calculate(String fn, double arg) {
+        return switch (fn) {
+            case "sin" -> Math.sin(arg);
+            case "cos" -> Math.cos(arg);
+            case "sign" -> {
+                if (arg < 0) yield -1;
+                if (arg > 0) yield 1;
+                yield 0;
+            }
+            default -> throw new IllegalArgumentException();
+        };
     }
 }
