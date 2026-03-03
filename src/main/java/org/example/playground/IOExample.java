@@ -20,6 +20,10 @@ public class IOExample {
      * - {@link BufferedWriter} - буферезированная запись
      */
     public static void main(String[] args) throws IOException {
+        readerAndWriter();
+    }
+
+    public static void readerAndWriter() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -31,6 +35,24 @@ public class IOExample {
 
         reader.close();
         writer.close();
+    }
+
+    /**
+     * Из недостатков - один сдвиг вправо из-за try
+     */
+    public static void readerWithTry() throws IOException {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            int n = Integer.parseInt(reader.readLine());
+            System.out.println(n);
+        }
+    }
+
+    public static void readerAndWriterWithTry() throws IOException {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out))) {
+            int n = Integer.parseInt(reader.readLine());
+            writer.write(n);
+        }
     }
 
     /**
