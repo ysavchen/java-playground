@@ -29,6 +29,7 @@ public class StringExample {
         "Hello, world!".substring(6);
         "Hello, world!".substring(6, 11);
         "Hello, world!".split(" ");
+        "Hello, world!".toCharArray();
     }
 
     public static void concatenation() {
