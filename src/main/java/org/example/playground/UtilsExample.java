@@ -37,5 +37,10 @@ public class UtilsExample {
         int c = Math.abs(-4);
         System.out.println("b: " + b);
         System.out.println("c: " + c);
+
+        int d = Math.max(5, 7);
+        int e = Math.min(4, 8);
+        System.out.println("Max: " + d);
+        System.out.println("Min: " + e);
     }
 }
