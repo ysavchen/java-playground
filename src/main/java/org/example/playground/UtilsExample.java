@@ -2,6 +2,9 @@ package org.example.playground;
 
 import java.util.Arrays;
 
+/**
+ * Утилитные классы
+ */
 public class UtilsExample {
 
     public static void main(String[] args) {
