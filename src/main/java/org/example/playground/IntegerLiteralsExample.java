@@ -3,7 +3,7 @@ package org.example.playground;
 public class IntegerLiteralsExample {
 
     /**
-     * var x = 123;<br/>
+     * {@code var x = 123;}<br/>
      * Какого типа будет x? Он будет int.<br/>
      * 123 влезет в byte и в short, но таких литералов не существует в Java.
      */

@@ -34,7 +34,7 @@ public class CollectionExample {
 
     /**
      * Упорядоченное множество (ordered set)<br/>
-     * Будете итерировать эелементы в том же порядке, в котором их добавляли в множество (insertion-order).<br/>
+     * Будете итерировать элементы в том же порядке, в котором их добавляли в множество (insertion-order).<br/>
      * ArrayList и LinkedList также являются упорядоченными коллекциями.
      */
     public static void linkedHashSet() {
