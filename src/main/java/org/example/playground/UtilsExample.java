@@ -33,16 +33,16 @@ public class UtilsExample {
     }
 
     public static void math() {
-        double a = Math.pow(2, 3);
+        double a = Math.pow(2, 3); // возведение 2 в степень 3
         System.out.println("a: " + a);
 
-        int b = Math.abs(3);
+        int b = Math.abs(3); // получение абсолютного значения числа
         int c = Math.abs(-4);
         System.out.println("b: " + b);
         System.out.println("c: " + c);
 
-        int d = Math.max(5, 7);
-        int e = Math.min(4, 8);
+        int d = Math.max(5, 7); // нахождение наибольшего числа из двух значений
+        int e = Math.min(4, 8); // нахождение наименьшего числа из двух значений
         System.out.println("Max: " + d);
         System.out.println("Min: " + e);
 
