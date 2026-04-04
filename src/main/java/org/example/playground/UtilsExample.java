@@ -46,7 +46,7 @@ public class UtilsExample {
         System.out.println("Max: " + d);
         System.out.println("Min: " + e);
 
-        // математическое целочисленное деление (округление всегда происходи вниз)
+        // математическое целочисленное деление (округление всегда происходит вниз)
         int f = -1 / 3;
         int g = Math.floorDiv(-1, 3);
         System.out.println("Java division: " + f);
